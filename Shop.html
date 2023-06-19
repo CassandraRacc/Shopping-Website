@@ -9,34 +9,38 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
   <style>
+
+   
     .custom-card-image {
       height: 500px;
       width: auto;
       object-fit: cover;
     }
 
-    Copy code
-.floating-button {
-  display: none;
+    .floating-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  top: 50px;
+  left: 20px;
   padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
+  background-color: #DBC7D0;
+  color: #ffffff;
   text-decoration: none;
+  border-radius: 5px;
+  z-index: 9999;
+}
+.btn{
+  background-color: #6CA189;
 }
 
-.floating-button.show {
-  display: block;
-}
+
+
   </style>
 
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg" style="background-color: #F2BAC980;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -63,7 +67,8 @@
   </nav>
  <!-- FLOATING BUTTON MAYBE? -->
 
- <a href="#top" class="floating-button">15% off</a>
+ <a href="#" class="floating-button">15% OFF</a>
+
 
 
   <div class="container mt-4">
