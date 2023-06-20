@@ -32,6 +32,11 @@
     color:#8EF9F3;
   }
 
+  .container{
+    margin-bottom:40px;
+
+  }
+
     #title {
       text-align: center;
       margin: 20px;
@@ -49,6 +54,9 @@
     }
     .charity-box{
       border:2px solid #000;
+    }
+    .inner-box{
+      margin:20px;
     }
   </style>
 
@@ -99,11 +107,14 @@
 
       <!-- charity progress -->
       <div class="charity-box">
-        <h5>Join us at any of our stores now to donate to our charity of the year.</h5>
-        <p>We currently have 71% of our goal </p>
-        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="71"
+        <div class="inner-box">
+          <h5>Join us at any of our stores now to donate to our charity of the year.</h5>
+          <p>We currently have 71% of our goal </p>
+         <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="71"
           aria-valuemin="0" aria-valuemax="100">
           <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 71%"></div>
+        </div>
+        
 
         </div>
       </div>
@@ -113,7 +124,7 @@
 
   <!-- Table with all the locations -->
 
-  <table class="table table-success table-striped">
+  <table class="table table-success table-striped table-hover">
     <thead>
       <tr>
         <th scope="col">Store #</th>
