@@ -13,15 +13,35 @@
    .carousel-caption{
     margin-bottom:25%;
    }
+
+   .navbar{
+    background-color:#F2BAC980;
+   }
+
+   @media (max-width: 600px) {
+      .navbar {
+        background-color: #048A8180;
+      }
+    }
+
+   @media (min-width: 601px) and (max-width: 1200px) {
+      .navbar {
+        background-color: #8A89C080;
+      }
+    }
+
+    .navbar-nav .nav-link:hover {
+    color:#8EF9F3;
+  }
   </style>
 
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg" style="background-color:#F2BAC980;">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Lets Shop!</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -78,6 +98,17 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <!-- footer -->
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="Shop.html" class="nav-link px-2 text-body-secondary">Shop</a></li>
+      <li class="nav-item"><a href="AboutUs.html" class="nav-link px-2 text-body-secondary">About Us</a></li>
+      <li class="nav-item"><a href="Locations.html" class="nav-link px-2 text-body-secondary">Locations</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2023 Lets Shop</p>
+  </footer>
 
 
 

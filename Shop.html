@@ -9,8 +9,26 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
   <style>
+    .navbar {
+      background-color: #F2BAC980;
+    }
 
-   
+    @media (max-width: 600px) {
+      .navbar {
+        background-color: #048A8180;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1200px) {
+      .navbar {
+        background-color: #8A89C080;
+      }
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #8EF9F3;
+    }
+
     .custom-card-image {
       height: 500px;
       width: auto;
@@ -18,31 +36,29 @@
     }
 
     .floating-button {
-  position: fixed;
-  top: 50px;
-  left: 20px;
-  padding: 10px 20px;
-  background-color: #DBC7D0;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
-  z-index: 9999;
-}
-.btn{
-  background-color: #6CA189;
-}
+      position: fixed;
+      top: 50px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: #DBC7D0;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      z-index: 9999;
+    }
 
-
-
+    .btn {
+      background-color: #6CA189;
+    }
   </style>
 
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg" style="background-color: #F2BAC980;">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Lets Shop!</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -65,9 +81,9 @@
       </div>
     </div>
   </nav>
- <!-- FLOATING BUTTON MAYBE? -->
+  <!-- FLOATING BUTTON MAYBE? -->
 
- <a href="#" class="floating-button">15% OFF</a>
+  <a href="#" class="floating-button">15% OFF</a>
 
 
 
@@ -75,7 +91,7 @@
 
     <div class="row gx-4 gy-4">
       <!-- shop1 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop1.webp" class="card-img-top custom-card-image" alt="purple shirt">
@@ -90,7 +106,7 @@
       </div>
 
       <!-- Shop 2 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop2.jpeg" class="card-img-top custom-card-image" alt="waves shirt">
@@ -104,7 +120,7 @@
 
       </div>
       <!-- Shop 3 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop3.webp" class="card-img-top custom-card-image" alt="green carhart">
@@ -118,7 +134,7 @@
 
       </div>
       <!-- Shop 4 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop4.jpeg" class="card-img-top custom-card-image" alt="coral patagonia">
@@ -132,7 +148,7 @@
 
       </div>
       <!-- Shop 5 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop5.jpeg" class="card-img-top custom-card-image" alt="everything will be ok shirt">
@@ -146,7 +162,7 @@
 
       </div>
       <!-- Shop 6 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop6.jpeg" class="card-img-top custom-card-image" alt="pink plain shirt">
@@ -178,7 +194,7 @@
       </section>
 
       <!-- Shop 7 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop7.avif" class="card-img-top custom-card-image" alt="plain dark blue shirt">
@@ -192,7 +208,7 @@
 
       </div>
       <!-- Shop 8 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop8.jpeg" class="card-img-top custom-card-image" alt="stay positive shirt">
@@ -206,7 +222,7 @@
 
       </div>
       <!-- Shop 9 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop9.jpeg" class="card-img-top custom-card-image" alt="plain light blue shirt">
@@ -221,7 +237,7 @@
       </div>
 
       <!-- Shop 10 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop10.webp" class="card-img-top custom-card-image" alt="stay golden shirt">
@@ -235,7 +251,7 @@
 
       </div>
       <!-- Shop 11 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop11.jpeg" class="card-img-top custom-card-image" alt="plain yellow shirt">
@@ -249,7 +265,7 @@
 
       </div>
       <!-- Shop 12 -->
-      <div class="col-lg-4 col-6">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
         <div class="card">
           <img src="images/shop12.avif" class="card-img-top custom-card-image" alt="peants shirt">
@@ -265,6 +281,16 @@
     </div>
 
   </div>
+  <!-- footer -->
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="Shop.html" class="nav-link px-2 text-body-secondary">Shop</a></li>
+      <li class="nav-item"><a href="AboutUs.html" class="nav-link px-2 text-body-secondary">About Us</a></li>
+      <li class="nav-item"><a href="Locations.html" class="nav-link px-2 text-body-secondary">Locations</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2023 Lets Shop</p>
+  </footer>
 
 
 
